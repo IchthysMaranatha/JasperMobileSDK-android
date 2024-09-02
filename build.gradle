@@ -54,7 +54,7 @@ apply plugin: 'build-dashboard'
 //}
 
 // just clean up dashboard from not generated reports
-test.reports.html.enabled = false
+// test.reports.html.enabled = false
 // just clean up dashboard from not generated reports
-test.reports.junitXml.enabled = false
+// test.reports.junitXml.enabled = false
 
