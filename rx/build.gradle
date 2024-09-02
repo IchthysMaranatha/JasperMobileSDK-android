@@ -28,8 +28,8 @@ apply plugin: 'jacoco'
 description = 'js-android-sdk-rx'
 version = clientModuleVersion
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+sourceCompatibility = 8
+targetCompatibility = 8
 
 ext {
     PUBLISH_GROUP_ID = group
