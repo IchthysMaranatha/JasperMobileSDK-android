@@ -57,7 +57,7 @@ publishing {
 
 task zipRelease(type: Zip) {
     from localReleaseDest
-    destinationDir file(buildDir)
+    destinationDirectory file(buildDir)
     archiveName "release-${version}.zip"
 }
 
