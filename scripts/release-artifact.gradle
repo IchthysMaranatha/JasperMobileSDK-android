@@ -45,13 +45,13 @@ task clientSourcesJar(type: Jar, dependsOn: classes) {
     from sourceSets.main.allJava
 }
 
-uploadArchives {
-    repositories.mavenDeployer {
+publishing {
+    repositories.maven {
         pom.groupId = groupId
         pom.artifactId = artifactId
         pom.version = version
         // Add other pom properties here if you want (developer details / licenses)
-        repository(url: "file://${localReleaseDest}")
+        url = uri("file://${localReleaseDest}")
     }
 }
 
