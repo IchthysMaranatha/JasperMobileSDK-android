@@ -34,7 +34,7 @@ ext {
 }
 
 dependencies {
-    compile project(':js-android-sdk-rx')
+    implementation project(':js-android-sdk-rx')
 }
 
 apply from: '../scripts/release-artifact.gradle'
