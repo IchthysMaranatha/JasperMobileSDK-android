@@ -49,9 +49,9 @@ apply plugin: 'java'
 apply plugin: 'jacoco'
 apply plugin: 'build-dashboard'
 
-buildDashboard {
-    reports.html.destination = "build/"
-}
+//buildDashboard {
+//    reports.html.destination = "build/"
+//}
 
 // just clean up dashboard from not generated reports
 test.reports.html.enabled = false
