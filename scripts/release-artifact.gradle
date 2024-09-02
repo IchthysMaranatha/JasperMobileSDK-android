@@ -68,7 +68,7 @@ task generateRelease {
     }
 }
 
-generateRelease.dependsOn(uploadArchives)
+generateRelease.dependsOn(publishing)
 generateRelease.dependsOn(zipRelease)
 
 artifacts {
