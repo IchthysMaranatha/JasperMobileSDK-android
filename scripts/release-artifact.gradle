@@ -57,8 +57,8 @@ publishing {
 
 task zipRelease(type: Zip) {
     from localReleaseDest
-    destinationDirectory file(buildDir)
-    archiveName "release-${version}.zip"
+    destinationDirectory = file("$buildDir")
+    archiveFileName = "release-${version}.zip"
 }
 
 task generateRelease << {
